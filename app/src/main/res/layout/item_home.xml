@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:cardElevation="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardCornerRadius="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/bg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@mipmap/default_splash_bg"
+            android:scaleType="centerCrop"/>
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/home_page_live"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="10dp"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/image"
+            android:layout_toEndOf="@id/image"
+            android:maxLines="1"
+            android:text="歌单"
+            android:textSize="25sp"
+            android:textColor="#00ff00" />
+
+        <TextView
+            android:id="@+id/desc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/title"
+            android:layout_toRightOf="@id/image"
+            android:layout_toEndOf="@id/image"
+            android:maxLines="1"
+            android:text="简介"
+            android:textSize="20sp"
+            android:textColor="#ffffff" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
